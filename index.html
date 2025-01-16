@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://raw.githubusercontent.com/AlenaMiaw/Blogger-Post/refs/heads/main/image/hgame/014Klee-Prank-Adventure/icon.png" rel="apple-touch-icon">
+    <title>Website dengan Menu Utama</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<header id="header">
+    <h1>Beranda</h1>
+</header>
+
+<nav>
+    <a id="link-home">Beranda</a>
+    <a id="link-balok">Volume Balok</a>
+    <a id="link-segitiga">Segitiga</a>
+    <a id="link-speed">Kecepatan</a>
+</nav>
+
+<main>
+    <div class="container">
+        <section id="home" class="section active">
+            <div class="apa">
+                <img src="https://html-generator-zeta.vercel.app/assets/ketawa.png" alt="bjir" />
+            </div>
+            <h2>Beranda</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur eleifend massa, ac varius libero rhoncus eget. Praesent iaculis, sapien quis molestie aliquet, mauris leo mollis urna, ut facilisis ante justo at diam. Vestibulum aliquam ullamcorper viverra. Aenean tempor erat sit amet eros vehicula, ut efficitur risus sollicitudin. Integer eu ornare neque. Sed porttitor congue turpis. Aenean vel condimentum sapien. Nullam non nulla eget leo ultrices semper. Cras aliquet consectetur est gravida aliquam. Nam enim elit, suscipit ultricies elementum quis, laoreet in felis. Mauris mauris ante, placerat sit amet auctor vel, vestibulum eget quam. Etiam congue, orci in vulputate molestie, nunc nulla tempor orci, et elementum est arcu quis lorem.</p>
+
+            <p>Nullam at lectus dui. In quis ultricies neque. Pellentesque molestie, velit vel tempus vulputate, nisi mauris fermentum tellus, ac ultricies nibh justo et orci. Nunc dui dolor, scelerisque non lacus et, maximus condimentum eros. Fusce sollicitudin, justo eget maximus dignissim, sem turpis ultrices massa, in facilisis massa turpis sit amet lacus. Pellentesque pellentesque viverra erat, eget tincidunt urna. Suspendisse tempor ex velit, quis ullamcorper lacus ullamcorper in. Etiam maximus mi neque, in fermentum magna posuere sit amet. Pellentesque ut porttitor erat. Sed consectetur pharetra suscipit. Duis rhoncus, elit vitae sodales porta, lorem eros condimentum elit, tristique tincidunt massa nibh at nibh.</p>
+        </section>
+
+        <section id="balok" class="section">
+            <h2>Volume Balok</h2>
+            <p>Masukkan panjang, lebar, dan tinggi balok untuk menghitung volumenya.</p>
+            <div class="side3">
+                <div class="input-group">
+                    <input type="number" id="length" placeholder="Panjang (cm)" />
+                    <label>Panjang (cm)</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="width" placeholder="Lebar (cm)" />
+                    <label>Lebar (cm)</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="height" placeholder="Tinggi (cm)" />
+                    <label>Tingggi (cm)</label>
+                </div>
+                <button id="calculate" class="gobtn">Hitung Volume</button>
+                <p id="result"></p>
+            </div>
+        </section>
+
+        <section id="segitiga" class="section">
+            <h2>Luas Segitiga</h2>
+            <p>Masukkan alas dan tinggi segitiga untuk menghitung luasnya.</p>
+            <div class="side3">
+                <div class="input-group">
+                    <input type="number" id="base" placeholder="Alas (cm)" />
+                    <label>Alas (cm)</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="heightTriangle" placeholder="Tinggi (cm)" />
+                    <label>Tinggi (cm)</label>
+                </div>
+                <button id="calculateArea" class="gobtn">Hitung Luas</button>
+                <p id="resultArea"></p>
+            </div>
+        </section>
+
+        <section id="speed" class="section">
+            <h2>Kecepatan</h2>
+            <p>Masukkan jarak dan waktu untuk menghitung kecepatan.</p>
+            <div class="side3">
+                <div class="input-group">
+                    <input type="number" id="distance" placeholder="Jarak (km)" />
+                    <label>Jarak (km)</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="time" placeholder="Waktu (jam)" />
+                    <label>Waktu (jam)</label>
+                </div>
+                <button id="calculateSpeed" class="gobtn">Hitung Kecepatan</button>
+                <p id="resultSpeed"></p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Hubungi Kami</h2>
+            <p>Jika Anda memiliki pertanyaan, silakan hubungi kami di <a href="mailto:example@example.com">example@example.com</a>.</p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Website dengan Menu Utama. Semua hak dilindungi.</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/volumebalok.js"></script>
+<script src="js/segitiga.js"></script>
+<script src="js/eL-kecepatan.js"></script>
+</body>
+</html>
